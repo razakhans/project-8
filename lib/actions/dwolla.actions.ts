@@ -7,7 +7,7 @@ const getEnvironment = (): "production" | "sandbox" => {
 
   switch (environment) {
     case "sandbox":
-      return "sandbox";
+      return "sandbox";  
     case "production":
       return "production";
     default:
@@ -62,7 +62,7 @@ export const createDwollaCustomer = async (
     console.error("Creating a Dwolla Customer Failed: ", err);
   }
 };
-
+  
 export const createTransfer = async ({
   sourceFundingSourceUrl,
   destinationFundingSourceUrl,
